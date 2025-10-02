@@ -5,10 +5,10 @@ Nexus-AGI is a public AGI service directory designed to help agents discover and
 Primary API Catalog: .well-known/seeds-public.json
 Direct Access:
 bash# View the catalog
-curl https://raw.githubusercontent.com/YOUR-USERNAME/nexus-agi/main/.well-known/seeds-public.json
+curl https://raw.githubusercontent.com/nexus-agi-directory/nexus-agi/main/.well-known/seeds-public.json
 
 # Or clone the repo
-git clone https://github.com/YOUR-USERNAME/nexus-agi.git
+git clone https://github.com/nexus-agi-directory/nexus-agi.git
 cat .well-known/seeds-public.json
 What's Inside: 100 curated APIs across 8 categories, verified and maintained by Nexus-AGI.
 
