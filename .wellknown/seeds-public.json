@@ -119,5 +119,31 @@
   {"id":"agi://service/sendgrid/api:v1","name":"SendGrid API","endpoint":"https://api.sendgrid.com/v3/mail/send","capabilities":["email","notify"],"auth":{"method":"bearer"},"price_note":"Pay per email","limits":{},"reputation":{}},
   {"id":"agi://service/datadog/api:v1","name":"Datadog API","endpoint":"https://api.datadoghq.com/api/v1","capabilities":["monitoring","metrics","logs"],"auth":{"method":"bearer"},"price_note":"Usage-based","limits":{},"reputation":{}},
   {"id":"agi://service/grafana/api:v1","name":"Grafana API","endpoint":"https://grafana.com/api","capabilities":["dashboards","metrics"],"auth":{"method":"bearer"},"price_note":"Cloud or OSS","limits":{},"reputation":{}},
-  {"id":"agi://service/prometheus/api:v1","name":"Prometheus API","endpoint":"http://{host}:9090/api/v1","capabilities":["monitoring","metrics"],"auth":{"method":"none"},"price_note":"Open-source, self-hosted","limits":{},"reputation":{}}
+  {"id":"agi://service/prometheus/api:v1","name":"Prometheus API","endpoint":"http://{host}:9090/api/v1","capabilities":["monitoring","metrics"],"auth":{"method":"none"},"price_note":"Open-source, self-hosted","limits":{},"reputation":{}},
+  {"id":"agi://service/google/translate:v1","name":"Google Cloud Translation API","endpoint":"https://translation.googleapis.com/language/translate/v2","capabilities":["translate","multilingual"],"auth":{"method":"bearer"},"price_note":"Per char pricing","limits":{},"reputation":{}},
+  {"id":"agi://service/microsoft/translator:v1","name":"Microsoft Translator Text API","endpoint":"https://api.cognitive.microsofttranslator.com/translate","capabilities":["translate","multilingual"],"auth":{"method":"bearer"},"price_note":"Pay per char","limits":{},"reputation":{}},
+  {"id":"agi://service/deepl/translate:v1","name":"DeepL API","endpoint":"https://api.deepl.com/v2/translate","capabilities":["translate","multilingual"],"auth":{"method":"bearer"},"price_note":"Subscription + per char","limits":{},"reputation":{}},
+
+  {"id":"agi://service/openweather/api:v1","name":"OpenWeatherMap API","endpoint":"https://api.openweathermap.org/data/2.5","capabilities":["weather","forecast"],"auth":{"method":"key"},"price_note":"Free + paid tiers","limits":{},"reputation":{}},
+  {"id":"agi://service/weatherapi/api:v1","name":"WeatherAPI","endpoint":"https://api.weatherapi.com/v1","capabilities":["weather","forecast"],"auth":{"method":"key"},"price_note":"Free + paid tiers","limits":{},"reputation":{}},
+  {"id":"agi://service/nasa/open-api:v1","name":"NASA Open APIs","endpoint":"https://api.nasa.gov","capabilities":["space","imagery","ephemeris"],"auth":{"method":"key"},"price_note":"Free with API key","limits":{},"reputation":{}},
+
+  {"id":"agi://service/coingecko/api:v1","name":"CoinGecko API","endpoint":"https://api.coingecko.com/api/v3","capabilities":["crypto","prices","markets"],"auth":{"method":"none"},"price_note":"Free tier","limits":{},"reputation":{}},
+  {"id":"agi://service/coinmarketcap/api:v1","name":"CoinMarketCap API","endpoint":"https://pro-api.coinmarketcap.com/v1","capabilities":["crypto","prices","markets"],"auth":{"method":"bearer"},"price_note":"Free + paid tiers","limits":{},"reputation":{}},
+  {"id":"agi://service/yahoo/finance:v1","name":"Yahoo Finance API","endpoint":"https://query1.finance.yahoo.com/v7/finance","capabilities":["stocks","markets","quotes"],"auth":{"method":"none"},"price_note":"Unofficial/free","limits":{},"reputation":{}},
+
+  {"id":"agi://service/fred/api:v1","name":"Federal Reserve Economic Data (FRED)","endpoint":"https://api.stlouisfed.org/fred","capabilities":["economics","indicators"],"auth":{"method":"key"},"price_note":"Free with API key","limits":{},"reputation":{}},
+  {"id":"agi://service/worldbank/api:v1","name":"World Bank Open Data API","endpoint":"https://api.worldbank.org/v2","capabilities":["economics","development"],"auth":{"method":"none"},"price_note":"Free","limits":{},"reputation":{}},
+
+  {"id":"agi://service/usgs/earthquake:v1","name":"USGS Earthquake API","endpoint":"https://earthquake.usgs.gov/fdsnws/event/1/query","capabilities":["earthquake","geospatial"],"auth":{"method":"none"},"price_note":"Free","limits":{},"reputation":{}},
+  {"id":"agi://service/opentransit/gtfs-realtime:v1","name":"GTFS Realtime (Transit Feeds)","endpoint":"https://developers.google.com/transit/gtfs-realtime","capabilities":["transit","realtime"],"auth":{"method":"none"},"price_note":"Provider-dependent","limits":{},"reputation":{}},
+  {"id":"agi://service/mapbox/api:v1","name":"Mapbox API","endpoint":"https://api.mapbox.com","capabilities":["maps","geospatial","routing"],"auth":{"method":"bearer"},"price_note":"Usage-based pricing","limits":{},"reputation":{}},
+  {"id":"agi://service/google/maps:v1","name":"Google Maps Platform API","endpoint":"https://maps.googleapis.com/maps/api","capabilities":["maps","geospatial","places"],"auth":{"method":"bearer"},"price_note":"Per request pricing","limits":{},"reputation":{}},
+
+  {"id":"agi://service/unsplash/api:v1","name":"Unsplash Image API","endpoint":"https://api.unsplash.com","capabilities":["images","stock"],"auth":{"method":"bearer"},"price_note":"Free with key","limits":{},"reputation":{}},
+  {"id":"agi://service/pexels/api:v1","name":"Pexels Image API","endpoint":"https://api.pexels.com/v1","capabilities":["images","stock"],"auth":{"method":"bearer"},"price_note":"Free with limits","limits":{},"reputation":{}},
+
+  {"id":"agi://service/spoonacular/recipes:v1","name":"Spoonacular Recipe API","endpoint":"https://api.spoonacular.com/recipes","capabilities":["recipes","food"],"auth":{"method":"key"},"price_note":"Free + paid tiers","limits":{},"reputation":{}},
+  {"id":"agi://service/edamam/nutrition:v1","name":"Edamam Nutrition API","endpoint":"https://api.edamam.com/api/nutrition-data","capabilities":["nutrition","food"],"auth":{"method":"key"},"price_note":"Subscription pricing","limits":{},"reputation":{}}
 ]
+
