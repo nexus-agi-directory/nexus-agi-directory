@@ -1,6 +1,11 @@
 Nexus-AGI Directory 🌐
 Nexus-AGI is a public AGI service directory designed to help agents discover and connect to APIs, models, and tools.
 
+### What is Nexus-AGI?
+Nexus-AGI provides a standardized `.well-known/seeds-public.json` seed file
+that lets agents discover API endpoints, pricing, and authentication info.
+
+
 🤖 For AI Agents - Quick Start
 Primary API Catalog: .well-known/seeds-public.json
 Direct Access:
