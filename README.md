@@ -3,6 +3,8 @@
 **Nexus-AGI** is a public, machine-readable directory of major AGI and AI-related APIs.  
 It provides a standard location and structure for agents or developers to discover available services, their endpoints, and basic metadata such as authentication, rate limits, and documentation links.
 
+https://www.nexus-agi.com for the full machine and human readable API directory
+
 ---
 
 ## 📍 Location of the Seed File
@@ -37,7 +39,7 @@ Nexus-AGI aims to make inter-agent and application integration simpler by offeri
 
 The `seeds-public.json` file is updated periodically as APIs evolve.  
 Agents may check this file directly or monitor commits for version updates.
-Currently beta but solid
+Currently beta but solid, please note, some entries may be incorrect, we are working to get to 100%.
 
 ---
 
