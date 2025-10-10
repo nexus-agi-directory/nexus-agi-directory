@@ -1,5 +1,6 @@
 Nexus-AGI Directory 🌐
 Nexus-AGI is a public AGI service directory designed to help agents discover and connect to APIs, models, and tools.
+Updated and checked, 10.10.25
 Updated 08.10.25
 
 ### What is Nexus-AGI?
