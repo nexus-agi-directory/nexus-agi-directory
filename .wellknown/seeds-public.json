@@ -1713,5 +1713,221 @@
     "status": "stable",
     "reputation": {},
     "notes": "Common endpoints: /current.json, /forecast.json."
+  },
+  {
+    "id": "agi://service/groq/chat-completions:v1",
+    "name": "Groq Chat Completions (OpenAI-compatible)",
+    "endpoint": "https://api.groq.com/openai/v1/chat/completions",
+    "capabilities": ["chat", "stream", "openai_compatible"],
+    "auth": {
+      "method": "bearer",
+      "header": "Authorization: Bearer ${GROQ_API_KEY}"},
+    "headers": {
+      "Content-Type": "application/json"},
+    "models_param": "model",
+    "limits": {
+      "rate": "by plan"},
+    "docs": "https://console.groq.com/docs/api-reference",
+    "status": "stable",
+    "reputation": {
+      "ecosystem": "fast inference"
+    },
+    "notes": "Set baseURL to https://api.groq.com/openai/v1 for OpenAI SDKs."
+  },
+  {
+    "id": "agi://service/fireworks/chat-completions:v1",
+    "name": "Fireworks Chat Completions",
+    "endpoint": "https://api.fireworks.ai/inference/v1/chat/completions",
+    "capabilities": ["chat", "tools", "stream", "embeddings", "rerank"],
+    "auth": {
+      "method": "bearer",
+      "header": "Authorization: Bearer ${FIREWORKS_API_KEY}"
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "models_param": "model",
+    "limits": {
+      "rate": "by plan"
+    },
+    "docs": "https://docs.fireworks.ai/api-reference/post-chatcompletions",
+    "status": "stable",
+    "reputation": {
+      "ecosystem": "multi-model host"
+    },
+    "notes": "Also supports embeddings and audio transcription endpoints."
+  },
+  {
+    "id": "agi://service/cerebras/chat-completions:v1",
+    "name": "Cerebras Inference (Chat Completions)",
+    "endpoint": "https://api.cerebras.ai/v1/chat/completions",
+    "capabilities": ["chat", "structured_outputs", "stream"],
+    "auth": {
+      "method": "bearer",
+      "header": "Authorization: Bearer ${CEREBRAS_API_KEY}"
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "models_param": "model",
+    "limits": {
+      "rate": "by plan"
+    },
+    "docs": "https://inference-docs.cerebras.ai/api-reference/chat-completions",
+    "status": "stable",
+    "reputation": {},
+    "notes": "OpenAI-style payload; supports JSON schema outputs (beta)."
+  },
+  {
+    "id": "agi://service/openai/embeddings:v1",
+    "name": "OpenAI Embeddings",
+    "endpoint": "https://api.openai.com/v1/embeddings",
+    "capabilities": ["embeddings"],
+    "auth": {
+      "method": "bearer",
+      "header": "Authorization: Bearer ${OPENAI_API_KEY}"
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "models_param": "model",
+    "limits": {
+      "rate": "varies by plan"
+    },
+    "docs": "https://platform.openai.com/docs/api-reference/embeddings",
+    "status": "stable",
+    "reputation": {},
+    "notes": "Returns vectors for search, clustering, and RAG pipelines."
+  },
+  {
+    "id": "agi://service/cohere/rerank:v2",
+    "name": "Cohere Rerank",
+    "endpoint": "https://api.cohere.ai/v2/rerank",
+    "capabilities": ["rerank", "semantic_search"],
+    "auth": {
+      "method": "bearer",
+      "header": "Authorization: Bearer ${COHERE_API_KEY}"
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "models_param": "model",
+    "limits": {
+      "rate": "by plan"
+    },
+    "docs": "https://docs.cohere.com/reference/rerank",
+    "status": "stable",
+    "reputation": {},
+    "notes": "Given a query and documents, returns ordered relevance scores."
+  },
+  {
+    "id": "agi://service/voyage/embeddings:v1",
+    "name": "Voyage AI Embeddings",
+    "endpoint": "https://api.voyageai.com/v1/embeddings",
+    "capabilities": ["embeddings"],
+    "auth": {
+      "method": "bearer",
+      "header": "Authorization: Bearer ${VOYAGE_API_KEY}"
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "models_param": "model",
+    "limits": {
+      "rate": "by plan"
+    },
+    "docs": "https://docs.voyageai.com/reference/embeddings-api",
+    "status": "stable",
+    "reputation": {},
+    "notes": "Text embedding endpoint for RAG and search."
+  },
+  {
+    "id": "agi://service/jina/embeddings:v1",
+    "name": "Jina AI Embeddings",
+    "endpoint": "https://api.jina.ai/v1/embeddings",
+    "capabilities": ["embeddings", "multilingual"],
+    "auth": {
+      "method": "bearer",
+      "header": "Authorization: Bearer ${JINA_API_KEY}"
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "models_param": "model",
+    "limits": {
+      "rate": "by plan"
+    },
+    "docs": "https://jina.ai/embeddings/",
+    "status": "stable",
+    "reputation": {},
+    "notes": "Supports text and CLIP-style embeddings; high-dimension vectors."
+  },
+  {
+    "id": "agi://service/cloudflare/workers-ai-run:v1",
+    "name": "Cloudflare Workers AI (Run Model)",
+    "endpoint": "https://api.cloudflare.com/client/v4/accounts/{account_id}/ai/run/{model}",
+    "capabilities": ["chat", "vision", "audio", "inference", "serverless"],
+    "auth": {
+      "method": "bearer",
+      "header": "Authorization: Bearer ${CF_API_TOKEN}"
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "models_param": null,
+    "limits": {
+      "rate": "by account plan"
+    },
+    "docs": "https://developers.cloudflare.com/api/resources/ai/methods/run/",
+    "status": "stable",
+    "reputation": {
+      "ecosystem": "edge"
+    },
+    "notes": "Model names prefixed like '@cf/meta/llama-3-8b-instruct'."
+  },
+  {
+    "id": "agi://service/google/places-textsearch:v1",
+    "name": "Google Places API (Text Search, New)",
+    "endpoint": "https://places.googleapis.com/v1/places:searchText",
+    "capabilities": ["search", "places", "local"],
+    "auth": {
+      "method": "key_or_bearer",
+      "header": "X-Goog-Api-Key: ${GOOGLE_API_KEY}"
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "X-Goog-FieldMask": "${FIELD_MASK}"
+    },
+    "models_param": null,
+    "limits": {
+      "rate": "by project quota"
+    },
+    "docs": "https://developers.google.com/maps/documentation/places/web-service/text-search",
+    "status": "stable",
+    "reputation": {},
+    "notes": "POST JSON with 'textQuery'; set FieldMask to control returned fields."
+  },
+  {
+    "id": "agi://service/linear/graphql:v1",
+    "name": "Linear GraphQL API",
+    "endpoint": "https://api.linear.app/graphql",
+    "capabilities": ["issues", "projects", "graph", "webhooks"],
+    "auth": {
+      "method": "bearer",
+      "header": "Authorization: Bearer ${LINEAR_TOKEN}"
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "models_param": null,
+    "limits": {
+      "rate": "by workspace plan"
+    },
+    "docs": "https://linear.app/developers/graphql",
+    "status": "stable",
+    "reputation": {},
+    "notes": "GraphQL schema for issues/projects; supports OAuth2 or personal API keys."
   }
+]
+
 ]
