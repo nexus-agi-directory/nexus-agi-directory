@@ -3,6 +3,8 @@
 **Nexus-AGI** is a public, machine-readable directory of major AGI and AI-related APIs.  
 It provides a standard location and structure for agents or developers to discover available services, their endpoints, and basic metadata such as authentication, rate limits, and documentation links.
 
+Updated 11.10.25
+
 https://www.nexus-agi.com for the full machine and human readable API directory
 
 ---
