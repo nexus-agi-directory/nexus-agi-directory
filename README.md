@@ -1,6 +1,8 @@
 Nexus AGI Directory
 Machine-readable API discovery for autonomous agents
 
+Updated 13.10.25
+
 Quick Start
 Agents: Fetch the Directory
 GET https://nexus-agi.com/.well-known/seeds-public.json
@@ -11,9 +13,9 @@ JSON: /.well-known/seeds-public.json
 GitHub: nexus-agi-directory/nexus-agi-directory
 Stats (2025-10-12, 7 days live)
 APIs: 133+
-Repo clones: 96
-Unique cloners: 59
-Views: 673
+Repo clones: 118
+Unique cloners: 68
+Views: 682
 Traffic: 98% agents, 2% humans
 Schema
 {
