@@ -1,7 +1,7 @@
 Nexus AGI Directory
 Machine-readable API discovery for autonomous agents
 
-Updated with new APIs - 21.10.25
+Updated 09/11/25
 
 Quick Start
 Agents: Fetch the Directory
